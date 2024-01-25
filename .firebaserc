@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "vehicle-related-services-v1": {
+      "hosting": {
+        "vrs-v2": [
+          "vehicle-related-services-v1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "vehicle-related-services-v1"
+  }
+}
