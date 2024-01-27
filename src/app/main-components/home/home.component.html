@@ -1,0 +1,42 @@
+<div class="tr-job-posted section-padding">
+    <div class="container-fluid">
+        <div class="job-tab text-center">
+            <ul class="nav nav-tabs justify-content-center" role="tablist">
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link active" id="accessories-tab" data-toggle="tab" href="#accessories" role="tab" aria-controls="accessories" aria-selected="true">Accessories</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" id="repair-tab" data-toggle="tab" href="#repair" role="tab" aria-controls="repair" aria-selected="false">Repair</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" id="spare-parts-tab" data-toggle="tab" href="#spare-parts" role="tab" aria-controls="spare-parts" aria-selected="false">Spare Parts</a>
+                </li>
+                <li role="presentation" class="nav-item">
+                    <a class="nav-link" id="vehicle-selling-tab" data-toggle="tab" href="#vehicle-selling" role="tab" aria-controls="vehicle-selling" aria-selected="false">Vehicle Selling</a>
+                </li>
+            </ul>
+            <div class="tab-content text-left">
+                <div role="tabpanel" class="tab-pane fade show active" id="accessories">
+                    <div class="row">
+                        <ng-container *ngFor="let item of accessoriesData" >
+                                <div class="col-md-3">
+                                <app-small-cards [data]="item"></app-small-cards>
+                            </div>
+                            </ng-container>
+                        
+                    </div>
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="repair">
+                    Content for Recent Jobs tab
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="spare-parts">
+                    Content for Popular Jobs tab
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="vehicle-selling">
+                    Content for Popular Jobs tab
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

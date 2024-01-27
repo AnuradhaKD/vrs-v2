@@ -16,6 +16,7 @@ export class LoginComponent {
   async login() {
     try {
       const auth = getAuth();
+      console.log(auth)
       const userCredential = await signInWithEmailAndPassword(auth, this.email, this.password);
       console.log('User logged in:', userCredential.user);
 
@@ -23,4 +24,20 @@ export class LoginComponent {
       console.log('Login error:', error.message);
     }
   }
+
+  // login() {
+  //   try {
+  //     const auth = getAuth();
+  //     console.log(auth)
+  //     const userCredential = signInWithEmailAndPassword(auth, this.email, this.password);
+  //     console.log('User logged in:');
+  //   }
+  //   catch (error: any) {
+  //     console.error('Login error:', error.message);
+  //     // Handle login error (display an error message, etc.)
+  //   }
+  // }
+
+
+
 }

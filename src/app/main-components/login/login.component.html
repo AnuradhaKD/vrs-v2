@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3 mt-5">
             <h2>Login</h2>
@@ -18,4 +18,67 @@
             </form>
         </div>
     </div>
+</div> -->
+
+<div id="main-wrapper" class="container" style="margin:7% auto;">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <div class="card border-0 bg-light">
+                <div class="card-body p-0">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="p-5">
+                                <div class="mb-5">
+                                    <h1 class="h4 font-weight-bold text-theme">Login</h1>
+                                </div>
+
+                                <h4 class="h5 mb-0">Welcome back!</h4>
+                                <p class="text-muted mt-2 mb-5">Enter your email address and password </p>
+
+                                <form (submit)="login()" style="line-height: 35px;">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control" required>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control"
+                                            required>
+                                    </div>
+                                    <button style="margin-top: 25px;" type="submit" class="btn btn-primary" [disabled]="!email || !password">Login</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 d-none d-lg-inline-block">
+                            <div class="account-block rounded-right">
+                                <div class="overlay rounded-right">
+
+                                    <img src="../../../assets/img/logo.png" style="width: 175px; padding: 35px; float:right"
+                                        alt="" srcset="">
+                                </div>
+                                <div class="account-testimonial">
+                                    <p class="lead text-white">"Best investment i made for a long time. Can only
+                                        recommend it for other users."</p>
+                                    <p>- Admin User</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end card-body -->
+            </div>
+            <!-- end card -->
+
+            <p class="text-muted text-center mt-3 mb-0">Don't have an account? <a href="/registration"
+                    class="text-primary ml-1">Register</a></p>
+
+            <!-- end row -->
+
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- Row -->
 </div>
